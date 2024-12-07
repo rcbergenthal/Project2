@@ -1,0 +1,87 @@
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+.nav-item-right{
+    display: flex;
+    margin-left:auto;
+    justify-content: flex-end; 
+}
+.navbar-nav .nav-item-right{ 
+    margin-left:auto;
+    display:flex;
+    justify-content: flex-end;
+}
+.introBlock{
+    display: flex;
+    height:50vh;
+}
+.introBlock .introImage{
+    display: flex;
+    flex:1;
+    height: 100%;
+    
+}
+
+.introBlock .introText{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+    height: 100%;
+}
+.spotlight{
+    display:flex;
+    height: 20vh;
+}
+.spotlight .spotlightTitle{
+ flex:1;
+ background-color: brown;
+ text-align: center;
+ align-content: center;
+ }
+.spotlight .spotlightBanner{
+ flex:3;
+ background-color: blue;
+ text-align: left;
+ align-content: center;
+ padding: 10px;
+ }
+ .spotlightGrid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+ }
+ .Record{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+    padding:20px;
+    width:100%;
+    border: 5px solid black;
+    flex-wrap: wrap;
+ }
+ .Record img{
+    width: 100%;
+    height: auto;
+    max-height: 400x;
+
+ }
+footer{
+    background-color: chocolate;
+} 
+.footContent{
+    display:flex;
+    justify-content: center;
+}
+
+ 
