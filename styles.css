@@ -1,17 +1,53 @@
 .nav-item{
     display: flex;
     align-items: center;
+    background-color: #0B3F30;
+   font-family: bagel fat one;
+   font-size: larger;
+}
+.nav-item :hover{
+    display: flex;
+    align-items: center;
+    color: #3fa185;
+    font-family: bagel fat one;
+    font-size: larger;
+}
+.navbar{
+    background-color: #0B3F30 !important;
+    padding: 0 !important;
+}
+.container-fluid .nav-link {
+    color: white !important;
+    font-family: oswald;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.container-fluid{
+    background-color:  #0B3F30 !important;
+    color: white;
+    
+}
+
+.spotlightGrid{
+    background-color:#decfbd;
+   
 }
 .nav-item-right{
     display: flex;
     margin-left:auto;
     justify-content: flex-end; 
+    color: white;
 }
 .navbar-nav .nav-item-right{ 
     margin-left:auto;
     display:flex;
     justify-content: flex-end;
+    color: white;
 }
+
 .introBlock{
     display: flex;
     height:50vh;
@@ -20,17 +56,17 @@
     display: flex;
     flex:1;
     height: 100%;
-    
 }
 
 .introBlock .introText{
     display: flex;
-    flex:1;
+    flex:2;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: aqua;
+    background-color: #decfbd;
     height: 100%;
+    font-family: oswald;
 }
 .spotlight{
     display:flex;
@@ -38,16 +74,23 @@
 }
 .spotlight .spotlightTitle{
  flex:1;
- background-color: brown;
+ background-image: url(texture.jpg);
+    background-blend-mode: overlay;
+    background-color: rgba(2, 44, 28, 0.9);
  text-align: center;
  align-content: center;
+ font-family: bagel fat one;
+ color: white;
+ font-size: x-large;
  }
 .spotlight .spotlightBanner{
  flex:3;
- background-color: blue;
+ background-color:#E39828;
  text-align: left;
  align-content: center;
  padding: 10px;
+ color:white;
+ font-family: oswald;
  }
  .spotlightGrid{
     display:grid;
@@ -64,11 +107,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: chartreuse;
     padding:20px;
     width:100%;
-    border: 5px solid black;
     flex-wrap: wrap;
+    color: white;
+    background-image: url(texture.jpg);
+    background-blend-mode: overlay;
+    background-color: rgba(2, 44, 28, 0.8);
  }
  .Record img{
     width: 100%;
@@ -77,11 +122,42 @@
 
  }
 footer{
-    background-color: chocolate;
+    background-color: #0B3F30;
+    color: white;
 } 
 .footContent{
     display:flex;
     justify-content: center;
 }
+.Record .recordTitle{
+    display: flex;
+    color: white;
+    font-family: bagel fat one;
+}
+.Record .recordBlurb{
+    display: flex;
+    color: white;
+    font-family: oswald;
+}
 
- 
+.footImage img{
+    max-width: 110px;
+    max-height: 60px;
+}
+.body{
+    background-color: #decfbd;
+}
+.intropollText{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #decfbd;
+    height: 100%;
+    font-family: oswald;
+}
+.bigText{
+    font-family: bagel fat one;
+    font-size: x-large;
+}
