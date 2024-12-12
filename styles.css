@@ -5,6 +5,7 @@
    font-family: bagel fat one;
    font-size: larger;
 }
+.fa-solid
 .nav-item :hover{
     display: flex;
     align-items: center;
@@ -67,6 +68,8 @@
     background-color: #decfbd;
     height: 100%;
     font-family: oswald;
+    padding: 5%;
+    font-size:larger;
 }
 .spotlight{
     display:flex;
@@ -75,14 +78,19 @@
 .spotlight .spotlightTitle{
  flex:1;
  background-image: url(texture.jpg);
-    background-blend-mode: overlay;
-    background-color: rgba(2, 44, 28, 0.9);
+ background-blend-mode: overlay;
+ background-color: rgba(2, 44, 28, 0.9);
  text-align: center;
  align-content: center;
  font-family: bagel fat one;
  color: white;
  font-size: x-large;
  }
+ .Record img:hover{
+    display: flex;
+    transform:scale(1.1) rotate(10deg);
+ }
+
 .spotlight .spotlightBanner{
  flex:3;
  background-color:#E39828;
@@ -91,6 +99,20 @@
  padding: 10px;
  color:white;
  font-family: oswald;
+ position: relative;
+ animation: bannerUnfurl 2s ease-out forwards;
+ transform: translateX(-100%);
+ opacity: 0;
+ }
+ @keyframes bannerUnfurl {
+    0%{
+        transform: translateX(100%);
+        opacity: 1;
+    }    
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
  }
  .spotlightGrid{
     display:grid;
@@ -124,6 +146,7 @@
 footer{
     background-color: #0B3F30;
     color: white;
+    margin-bottom: 0;
 } 
 .footContent{
     display:flex;
@@ -138,6 +161,15 @@ footer{
     display: flex;
     color: white;
     font-family: oswald;
+    background-image: linear-gradient(white, white);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 5px;
+    transition: 500ms ease;
+}
+.Record .recordBlurb:hover{
+    background-size: 100% 3px;
 }
 
 .footImage img{
@@ -160,4 +192,61 @@ footer{
 .bigText{
     font-family: bagel fat one;
     font-size: x-large;
+}
+
+.aroundText{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+
+
+.roundText{
+    animation: circularText 20s linear infinite;
+    transform-origin: center center;
+    color: white;
+    font-family: bagel fat one; 
+    position: absolute;
+}
+@keyframes circularText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.introblockPoll{
+    display: flex;
+    height:60vh;
+}
+.introblockPoll .introimagePoll{
+    display: flex;
+    flex:1;
+    height: 100%;
+}
+
+.introblockPoll .introtextPoll{
+    display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    font-family: oswald;
+    padding: 5%;
+    font-size: larger;
+}
+.form{
+    padding:5px;
+    font-family: bagel fat one;
+}
+.formcontainer{
+    padding: 30px;
+   font-family: bagel fat one;
 }
